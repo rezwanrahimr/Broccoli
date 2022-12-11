@@ -44,16 +44,30 @@ Banner Start
   font-family: var(--body-font);
   letter-spacing: 1px;
   font-weight: lighter;
+  line-height: 1.5em;
+  font-weight: 500;
+  margin: 1.5em 0;
+}
+@media only screen and (min-width: 768px) {
+  .banner-text p {
+    width: 40%;
+  }
 }
 .banner-text > button {
-  width: 13em;
-  height: 3em;
+  width: 13.5em;
+  height: 3.5em;
   background: var(--secondary-color);
   border: none;
   margin-top: 1em;
-}
-.banner-text a {
-  font-weight: 700;
-  text-decoration: none;
+  font-weight: bold;
   color: white;
 }
+.banner-text button:hover {
+  color: var(--heading-color);
+  background: white;
+  border: 2px solid black;
+  transition: ease-in 0.5s;
+}
+/* ...............................
+Banner End
+................................ */
