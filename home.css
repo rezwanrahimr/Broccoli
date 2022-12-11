@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --heading-color: #071c1f;
+  --secondary-color: #80b500;
+  --body-font: "Open Sans", sans-serif;
+}
+.container {
+  padding: 0 1em;
+  margin: 0 4em;
+}
+
+/* ...............................
+Banner Start
+................................ */
+.banner {
+  background-image: url("/images/banner_img.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-text {
+  color: var(--heading-color);
+  text-align: left;
+  font-family: "Rajdhani", sans-serif;
+  padding: 6em 0;
+}
+.banner-text h5 {
+  font-size: 1rem;
+}
+.banner-text h1 {
+  line-height: 40px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+.banner-text p {
+  color: var(--heading-color);
+  padding-left: 2em;
+  border-left: 1px solid black;
+  font-family: var(--body-font);
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.banner-text > button {
+  width: 13em;
+  height: 3em;
+  background: var(--secondary-color);
+  border: none;
+  margin-top: 1em;
+}
+.banner-text a {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
