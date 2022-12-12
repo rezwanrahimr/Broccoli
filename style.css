@@ -6,17 +6,35 @@
   --secondary-font: "Rajdhani", sans-serif;
 }
 .cart {
+  position: relative;
   margin: 0 auto;
-  height: 58em;
+  max-height: 100%;
   width: 18em;
-  color: var(--heading-color);
-  font-family: var(--secondary-font);
+  border: 1.5px solid #d1e0e0;
 }
 .cart img {
+  background: #f7f7f8;
   max-width: 100%;
 }
 .cart-info {
+  padding: 1.5em;
+  color: var(--heading-color);
+  font-family: var(--secondary-font);
   text-align: center;
+  line-height: 10px;
+}
+.cart-info h2 {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.cart-info del {
+  color: #b3d366;
+}
+.cart-info span {
+  margin-right: 0.5em;
+}
+.cart-info > h4 {
+  font-weight: 700;
 }
 .cart-rating > ul {
   justify-content: center;
@@ -26,5 +44,21 @@
 .cart-rating ul li {
   list-style: none;
   margin: 0 0.3em;
+  font-size: x-small;
+}
+.product-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  width: 3.5em;
+  height: 2em;
+  background: var(--secondary-color);
+  border-radius: 15px 0 15px;
+}
+.product-badge p {
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--secondary-font);
   font-size: small;
 }
