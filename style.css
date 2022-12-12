@@ -6,13 +6,20 @@
   --secondary-font: "Rajdhani", sans-serif;
 }
 .cart {
+  border-radius: 20px;
   position: relative;
+  cursor: pointer;
   margin: 0 auto;
   max-height: 100%;
   width: 18em;
   border: 1.5px solid #d1e0e0;
+  box-sizing: border-box;
+}
+.cart:hover .cart-icons {
+  visibility: visible;
 }
 .cart img {
+  border-radius: 20px 20px 0 0;
   background: #f7f7f8;
   max-width: 100%;
 }
@@ -44,7 +51,7 @@
 .cart-rating ul li {
   list-style: none;
   margin: 0 0.3em;
-  font-size: x-small;
+  font-size: small;
 }
 .product-badge {
   position: absolute;
@@ -61,4 +68,34 @@
   font-weight: bold;
   font-family: var(--secondary-font);
   font-size: small;
+}
+.cart-icons {
+  visibility: hidden;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.8em;
+}
+.cart-icons div {
+  margin: 0 0.5em;
+  padding: 0.8em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: white;
+}
+.cart-icons div i {
+  text-align: center;
+  padding: 0.5em;
+}
+.cart-icons div:hover {
+  background-color: var(--secondary-color);
+}
+.cart-icons div:hover .fa-solid {
+  color: white;
+}
+.fa-star {
+  color: orange;
 }
