@@ -339,3 +339,72 @@ Top
     color: white;
   }
 }
+#featured-card .cart {
+  border-radius: 0;
+}
+#featured-card .cart img {
+  border-radius: 0;
+}
+
+/* ----------contact us start---------- */
+.contact-us {
+  margin: 4em 0;
+  background-image: url("/images/contactusBackground.jpg");
+  height: 26em;
+}
+.contact-items {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-items img {
+  max-width: 82%;
+  margin-top: 1em;
+}
+.contact-items h6 {
+  word-spacing: 0.5rem;
+  font-size: small;
+  color: var(--secondary-color);
+}
+.contact-items h2 {
+  margin: 0.5em 0;
+  color: white;
+  font-size: 3rem;
+}
+.call-btn {
+  box-sizing: border-box;
+  color: white;
+  height: 3.5em;
+  width: 10em;
+  font-weight: bold;
+  font-size: medium;
+  font-family: var(--secondary-font);
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 0 0.5em 0 0;
+}
+.call-btn:hover {
+  color: var(--heading-color);
+  background: white;
+}
+.contact-btn {
+  box-sizing: border-box;
+  color: white;
+  height: 3.5em;
+  width: 10em;
+  font-weight: bold;
+  font-size: medium;
+  font-family: var(--secondary-font);
+  background: transparent;
+  border: 1px solid white;
+}
+.contact-btn:hover {
+  background: var(--secondary-color);
+}
+.btn-group {
+  display: flex;
+}
+.clear-div {
+  clear: both;
+}
