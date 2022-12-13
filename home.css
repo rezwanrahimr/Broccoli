@@ -298,3 +298,44 @@ Top
     grid-gap: 0.5em;
   }
 }
+/* status section start */
+.status-section {
+  background: #11271f;
+  background-size: cover;
+  margin: 4em 0;
+}
+.counts-div {
+  padding: 3em 0;
+  color: white;
+  text-align: center;
+}
+.counts-div div {
+  margin: 3.5em 0;
+}
+.counts-div div h1 {
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+}
+.counts-div div p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .status-section {
+    background-image: url("/images/statusBackgroundImg.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 4em 0;
+  }
+  .counts-div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .counts-div div {
+    margin: 8em 2.5em;
+    color: white;
+  }
+}
