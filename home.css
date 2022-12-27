@@ -95,6 +95,24 @@ nav div button {
 nav div h4 {
   margin: 0.5em 0;
 }
+.shop-items {
+  border-top: 5px solid var(--secondary-color);
+  position: absolute;
+  padding: 0.5em;
+  width: 12em;
+  height: auto;
+  margin-top: 1em;
+  background: white;
+  visibility: hidden;
+}
+.shop-items ul li {
+  padding: 0 0.5em;
+  font-weight: 500;
+  list-style: none;
+}
+.shop-items ul li:hover {
+  color: var(--secondary-color);
+}
 @media (max-width: 500px) {
   nav div h4:hover {
     margin: 0.5em 0;
@@ -115,18 +133,26 @@ nav div h4 {
     font-family: var(--secondary-font);
     font-size: medium;
   }
+  .navbar div h4:hover {
+    color: var(--secondary-color);
+  }
+
   nav div h4 {
     margin: 0;
     background: none;
     padding: 0;
     color: var(--heading-color);
   }
+
   nav div {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
   nav div button {
+    visibility: visible;
+  }
+  .shop:hover .shop-items {
     visibility: visible;
   }
 }
