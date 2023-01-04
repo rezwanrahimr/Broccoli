@@ -133,6 +133,36 @@ nav div h4 {
 .news-items ul li:hover {
   color: var(--secondary-color);
 }
+.pages {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.page-items {
+  margin: 0 auto;
+  border-top: 5px solid var(--secondary-color);
+  position: absolute;
+  width: 60em;
+  height: 23em;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  margin-right: 17em;
+  margin-top: 5em;
+
+  /* visibility: hidden; */
+}
+.page-items img {
+  max-width: 50%;
+}
+.page-items div ul li {
+  padding: 0 0.5em;
+  font-weight: 500;
+  list-style: none;
+  color: black;
+}
 @media (max-width: 500px) {
   nav div h4:hover {
     margin: 0.5em 0;
